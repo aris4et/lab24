@@ -21,10 +21,10 @@ int main(){
 
     printf("Reading number of records in the data file.\n");
     printf("121 records in the data file.\n");
-   printf("The first cadet is:\n"); 
-   printCadetInfo(dataFile[0]);
-   printf("The last cadet is:\n");
-   printCadetInfo(dataFile[numcadets-1]);
+    printf("The first cadet is:\n"); 
+    printCadetInfo(dataFile[0]);
+    printf("The last cadet is:\n");
+    printCadetInfo(dataFile[numcadets-1]);
 
     free(dataFile);
 
