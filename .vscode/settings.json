@@ -4,6 +4,7 @@
         "lab20functs.h": "c",
         "stdbool.h": "c",
         "stdio.h": "c",
-        "lab21functs.h": "c"
+        "lab21functs.h": "c",
+        "errno.h": "c"
     }
 }
