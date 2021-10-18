@@ -26,15 +26,15 @@ int getNumRecs(){
 
 void getDataText(CadetInfoStructType dataFile[],int numcadets,FILE *out){
     int numRead=0;
-    int num1;
-     fscanf(out,"%d",&num1);
+  
  out = fopen("lab24data.txt", "r");
-
+  int num1;
+     fscanf(out,"%d",&num1);
     char firstName[30];
     char lastName[45];
    
         while (numRead < numcadets && !feof(out)) {
-            fscanf(out, "%s %s %d %d %d", firstName, lastName, &dataFile[numRead].age,
+            fscanf(out, "%s %s %d %d %d", lastName, firstName, &dataFile[numRead].age,
                &dataFile[numRead].squad, &dataFile[numRead].year);
             strcat(firstName, " ");
             strcpy(dataFile[numRead].name, strcat(firstName, lastName));
@@ -47,9 +47,9 @@ void getDataText(CadetInfoStructType dataFile[],int numcadets,FILE *out){
 }
 
 void printCadetInfo(CadetInfoStructType cadetRecord) {
-    printf("Cadet name = \t%s\n", cadetRecord.name);
-    printf("Cadet squad = \t%d\n", cadetRecord.age);
-    printf("Cadet year = \t%d\n\n", cadetRecord.squad);
-    printf("Cadet year = \t%d\n\n", cadetRecord.year);
+    printf("Cadet name = %s\n", cadetRecord.name);
+    printf("Cadet age = %d\n", cadetRecord.age);
+    printf("Cadet squad = %d\n", cadetRecord.squad);
+    printf("Cadet year = %d\n", cadetRecord.year);
 
 }

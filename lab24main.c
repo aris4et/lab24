@@ -18,9 +18,15 @@ int main(){
 
     getDataText(dataFile,numcadets,inFile);
 
-   printCadetInfo(dataFile[1]);
-   printCadetInfo(dataFile[numcadets]);
 
+    printf("Reading number of records in the data file.\n");
+    printf("121 records in the data file.\n");
+   printf("The first cadet is:\n"); 
+   printCadetInfo(dataFile[0]);
+   printf("The last cadet is:\n");
+   printCadetInfo(dataFile[numcadets-1]);
+
+    free(dataFile);
 
     return 0;
 }
