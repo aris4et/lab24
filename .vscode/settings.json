@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "lab19functs.h": "c",
+        "lab20functs.h": "c",
+        "stdbool.h": "c",
+        "stdio.h": "c",
+        "lab21functs.h": "c"
+    }
+}
